@@ -5,11 +5,15 @@ VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interators", "Interators", "{92A473E4-F442-4A28-970B-3247048F7083}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interators", "Interators\Interators.csproj", "{76609D81-E144-4065-B6FF-DEEF13B55E67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interators", "Interators\Interators.csproj", "{76609D81-E144-4065-B6FF-DEEF13B55E67}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PartialClasses", "PartialClasses", "{B9FB74D9-239C-435A-9AE1-391A99CF8AAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartialClasses", "PartialClasses\PartialClasses.csproj", "{81A32AB0-5CEC-4000-91FE-A3D95EC4C10B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PartialClasses", "PartialClasses\PartialClasses.csproj", "{81A32AB0-5CEC-4000-91FE-A3D95EC4C10B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ImplicitTypingAndObjectInitializer", "ImplicitTypingAndObjectInitializer", "{6A6C7AE4-8352-409F-BDFE-AC6355EFC348}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImplicitTyping", "ImplicitTyping\ImplicitTyping.csproj", "{51330B96-1FC0-4B04-A3AA-ADC80236D6C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +29,10 @@ Global
 		{81A32AB0-5CEC-4000-91FE-A3D95EC4C10B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81A32AB0-5CEC-4000-91FE-A3D95EC4C10B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81A32AB0-5CEC-4000-91FE-A3D95EC4C10B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51330B96-1FC0-4B04-A3AA-ADC80236D6C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51330B96-1FC0-4B04-A3AA-ADC80236D6C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51330B96-1FC0-4B04-A3AA-ADC80236D6C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51330B96-1FC0-4B04-A3AA-ADC80236D6C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{76609D81-E144-4065-B6FF-DEEF13B55E67} = {92A473E4-F442-4A28-970B-3247048F7083}
 		{81A32AB0-5CEC-4000-91FE-A3D95EC4C10B} = {B9FB74D9-239C-435A-9AE1-391A99CF8AAA}
+		{51330B96-1FC0-4B04-A3AA-ADC80236D6C7} = {6A6C7AE4-8352-409F-BDFE-AC6355EFC348}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {364366FB-8A6B-4A40-84C5-930F4D1618F7}
