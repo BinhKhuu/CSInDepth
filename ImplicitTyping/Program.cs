@@ -39,6 +39,11 @@ var order2 = new Order
 
     }
 };
+
+// these are the same anonymous type and the compiler will generate and assign them the same class (inspect the .dll)
+var sameObject1 = new { property1 = "test" };
+var sameObject2 = new { property1 = "test" };
+
 # endregion
 public class Order
 {
