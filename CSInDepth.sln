@@ -27,6 +27,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExpressionTrees", "Expressi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressionTrees", "ExpressionTrees\ExpressionTrees.csproj", "{053B6F76-BE14-403A-8056-30E54D7C766E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "QueryExpressionAndTransparentIdentifiers", "QueryExpressionAndTransparentIdentifiers", "{807BB04A-4AE3-46E4-927B-8620C44FD67F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueryExpressionAndTransparentIdentifiers", "QueryExpressionAndTransparentIdentifiers\QueryExpressionAndTransparentIdentifiers.csproj", "{97630C89-D2EE-4A7F-B47A-D6DE178C52FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +65,10 @@ Global
 		{053B6F76-BE14-403A-8056-30E54D7C766E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{053B6F76-BE14-403A-8056-30E54D7C766E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{053B6F76-BE14-403A-8056-30E54D7C766E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97630C89-D2EE-4A7F-B47A-D6DE178C52FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97630C89-D2EE-4A7F-B47A-D6DE178C52FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97630C89-D2EE-4A7F-B47A-D6DE178C52FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97630C89-D2EE-4A7F-B47A-D6DE178C52FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,6 +81,7 @@ Global
 		{1AADF274-50E6-4BBD-A0E5-91153E5FF8D0} = {A799610C-7B7F-4D4F-91EC-46A9FE5E8A3F}
 		{88DECEA2-E312-4074-8FF1-E0ACC8925BBE} = {A799610C-7B7F-4D4F-91EC-46A9FE5E8A3F}
 		{053B6F76-BE14-403A-8056-30E54D7C766E} = {882D8700-FCC4-4FC6-BD18-265303FBE7AC}
+		{97630C89-D2EE-4A7F-B47A-D6DE178C52FB} = {807BB04A-4AE3-46E4-927B-8620C44FD67F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {364366FB-8A6B-4A40-84C5-930F4D1618F7}
