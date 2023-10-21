@@ -22,6 +22,7 @@ var valueSafe = 10;
 
 var GetNextValueAsyncSafe = async Task<int> (int delay) =>
 {
+    // limit threads that can access the protect resource
     await mutex.WaitAsync(delay).ConfigureAwait(false);
     try
     {
