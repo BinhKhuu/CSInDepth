@@ -1,16 +1,19 @@
 ﻿
 using System;
 
+SynchronizationContext sc = SynchronizationContext.Current;
 AsyncVoidExcpetion_CannotBeCaughtByCatch();
 VoidExcpetion_CannotBeCaughtByCatch();
 AsyncTaskException_CantBeCaughtByCatch();
+SynchronizationContextExample(ThrowExceptionAsync, () => Console.WriteLine("ugh") );
+Console.ReadLine();
 
 // Exceptions are captured in the Task, Async void does not return a task, so its raised to the SynchronizationContext
 // Having async void decorator means the exception is sent to the SynchronizationContext so it can't be caught even when the code has no asynchronous tasks.
 static async void ThrowExceptionAsync()
 {
-    // nothing async here
     throw new InvalidOperationException();
+
 }
 
 static void AsyncVoidExcpetion_CannotBeCaughtByCatch()
@@ -66,4 +69,23 @@ static async void AsyncTaskException_CantBeCaughtByCatch()
             Console.WriteLine(ex.Message);
         }
     }
+}
+
+static void SynchronizationContextExample(Action worker, Action completion)
+{
+    //By default, all threads in console applications and Windows Services only have the default SynchronizationContext. This causes some event-based asynchronous components to fail.
+    SynchronizationContext sc = SynchronizationContext.Current;
+    ThreadPool.QueueUserWorkItem(_ =>
+    {
+        try
+        {
+            worker();
+        }
+        finally
+        {
+            // Only the SynchronizationContext is informed when the async void has returned
+            // Error in synchronizationContext
+            sc?.Post(_ => completion(), null); //sc is null in this example. Todo workout how to get Synchroniztion context
+        }
+    });
 }
