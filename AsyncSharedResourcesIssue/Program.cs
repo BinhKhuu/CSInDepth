@@ -12,7 +12,7 @@ var GetNextValueAsync = async Task<int> (int delay) =>
 var aValue =  GetNextValueAsync(1000); // no await here will execute GetNextValueAsync until it reaches await on line 6 and return to line 13
 var bValue = GetNextValueAsync(10); // no await here will execute GetNextValueAsync until it reaches await on line 6 and return to line 14
 await Task.WhenAll(aValue,bValue); // await here everything after this will be the a continuation if tasks have not completed, will go to next line immidately if task completed
-Console.WriteLine($"a value {aValue.Result}, b value {bValue.Result}");
+Console.WriteLine($"a value {aValue.Result}, b value {bValue.Result}"); //.result is blocking
 
 /// todo research SemaphoreSlim
 // this will keep is safe not sure how it works
