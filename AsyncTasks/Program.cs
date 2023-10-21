@@ -73,7 +73,8 @@ static async void AsyncTaskException_CantBeCaughtByCatch()
 
 static void SynchronizationContextExample(Action worker, Action completion)
 {
-    //By default, all threads in console applications and Windows Services only have the default SynchronizationContext. This causes some event-based asynchronous components to fail.
+    //By default, all threads in console applications and Windows Services only have the default SynchronizationContext.
+    //This causes some event-based asynchronous components to fail.
     SynchronizationContext sc = SynchronizationContext.Current;
     ThreadPool.QueueUserWorkItem(_ =>
     {

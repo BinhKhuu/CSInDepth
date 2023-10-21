@@ -41,13 +41,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpandoObject", "ExpandoObj
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Async", "Async", "{95D1AB3B-55B4-474F-BB76-8BF787A0DA6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncExceptions", "AsyncTasks\AsyncExceptions.csproj", "{AAE31D9D-2B6C-41B7-993C-5F32399CA5D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncExceptions", "AsyncTasks\AsyncExceptions.csproj", "{AAE31D9D-2B6C-41B7-993C-5F32399CA5D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncMainExceptions", "AsyncMain\AsyncMainExceptions.csproj", "{9E883778-B330-4C2E-9620-25DCDEE7F5FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncMainExceptions", "AsyncMain\AsyncMainExceptions.csproj", "{9E883778-B330-4C2E-9620-25DCDEE7F5FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigureAwait", "ConfigureAwait\ConfigureAwait.csproj", "{C57A07D4-E027-4653-BA40-20320FA43BFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigureAwait", "ConfigureAwait\ConfigureAwait.csproj", "{C57A07D4-E027-4653-BA40-20320FA43BFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncSharedResourcesIssue", "AsyncSharedResourcesIssue\AsyncSharedResourcesIssue.csproj", "{BBC00D25-389D-4F5E-988B-A137AAD6A646}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncSharedResourcesIssue", "AsyncSharedResourcesIssue\AsyncSharedResourcesIssue.csproj", "{BBC00D25-389D-4F5E-988B-A137AAD6A646}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskScheduler", "TaskScheduler\TaskScheduler.csproj", "{0F8DBB79-00D3-4A1C-91C6-FF8246277CB3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -115,6 +117,10 @@ Global
 		{BBC00D25-389D-4F5E-988B-A137AAD6A646}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBC00D25-389D-4F5E-988B-A137AAD6A646}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBC00D25-389D-4F5E-988B-A137AAD6A646}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F8DBB79-00D3-4A1C-91C6-FF8246277CB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F8DBB79-00D3-4A1C-91C6-FF8246277CB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F8DBB79-00D3-4A1C-91C6-FF8246277CB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F8DBB79-00D3-4A1C-91C6-FF8246277CB3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -135,6 +141,7 @@ Global
 		{9E883778-B330-4C2E-9620-25DCDEE7F5FB} = {95D1AB3B-55B4-474F-BB76-8BF787A0DA6C}
 		{C57A07D4-E027-4653-BA40-20320FA43BFE} = {95D1AB3B-55B4-474F-BB76-8BF787A0DA6C}
 		{BBC00D25-389D-4F5E-988B-A137AAD6A646} = {95D1AB3B-55B4-474F-BB76-8BF787A0DA6C}
+		{0F8DBB79-00D3-4A1C-91C6-FF8246277CB3} = {95D1AB3B-55B4-474F-BB76-8BF787A0DA6C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {364366FB-8A6B-4A40-84C5-930F4D1618F7}
