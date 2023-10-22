@@ -51,7 +51,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncSharedResourcesIssue",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskScheduler", "TaskScheduler\TaskScheduler.csproj", "{0F8DBB79-00D3-4A1C-91C6-FF8246277CB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SynchronizationContextAndTaskScheduler", "SynchronizationContextAndTaskScheduler\SynchronizationContextAndTaskScheduler.csproj", "{5B62BE53-7BB8-4876-A69D-D046650A8E86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SynchronizationContextAndTaskScheduler", "SynchronizationContextAndTaskScheduler\SynchronizationContextAndTaskScheduler.csproj", "{5B62BE53-7BB8-4876-A69D-D046650A8E86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SynchronizationContextTaskSchedulerAwaitable", "BlazorApp1\SynchronizationContextTaskSchedulerAwaitable.csproj", "{224A2166-0040-498B-A375-A0F1EBA5FAEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -127,6 +129,10 @@ Global
 		{5B62BE53-7BB8-4876-A69D-D046650A8E86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B62BE53-7BB8-4876-A69D-D046650A8E86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B62BE53-7BB8-4876-A69D-D046650A8E86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{224A2166-0040-498B-A375-A0F1EBA5FAEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{224A2166-0040-498B-A375-A0F1EBA5FAEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{224A2166-0040-498B-A375-A0F1EBA5FAEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{224A2166-0040-498B-A375-A0F1EBA5FAEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -149,6 +155,7 @@ Global
 		{BBC00D25-389D-4F5E-988B-A137AAD6A646} = {95D1AB3B-55B4-474F-BB76-8BF787A0DA6C}
 		{0F8DBB79-00D3-4A1C-91C6-FF8246277CB3} = {95D1AB3B-55B4-474F-BB76-8BF787A0DA6C}
 		{5B62BE53-7BB8-4876-A69D-D046650A8E86} = {95D1AB3B-55B4-474F-BB76-8BF787A0DA6C}
+		{224A2166-0040-498B-A375-A0F1EBA5FAEF} = {95D1AB3B-55B4-474F-BB76-8BF787A0DA6C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {364366FB-8A6B-4A40-84C5-930F4D1618F7}

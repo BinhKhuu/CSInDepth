@@ -1,0 +1,50 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+<button @onclick="SyncContext">Sync Context</button>
+<button @onclick="TaskScheduler">Task Scheduler</button>
+<button @onclick="Awaitable">Awaitable</button>
+
+<p>@message</p>
+
+@code {
+    private static readonly HttpClient s_httpClient = new HttpClient();
+    private TaskScheduler ts;
+    private string message = "ugh";
+    // Use Synchronization context to execute continuation
+    private void SyncContext()
+    {
+        SynchronizationContext sc = SynchronizationContext.Current;
+        Task.Delay(TimeSpan.FromSeconds(1)).ContinueWith(t =>
+        {
+
+            sc.Post(delegate
+            {
+                message = $"{sc.GetType()}";
+            }, null);
+        });
+    }
+
+    // Marshall the current SynchronizationContext from the TaskScheduler.
+    private void TaskScheduler()
+    {
+        Task.Delay(TimeSpan.FromSeconds(1)).ContinueWith(t =>
+        {
+            message = $"{System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext().ToString()}";
+        }, System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext());
+    }
+
+    // Awaitable
+    private async Task Awaitable()
+    {
+        await Task.Delay(TimeSpan.FromSeconds(1)).ConfigureAwait(true);
+        message = "awaitable";
+    }
+}
