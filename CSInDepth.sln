@@ -49,7 +49,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigureAwait", "Configure
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncSharedResourcesIssue", "AsyncSharedResourcesIssue\AsyncSharedResourcesIssue.csproj", "{BBC00D25-389D-4F5E-988B-A137AAD6A646}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskScheduler", "TaskScheduler\TaskScheduler.csproj", "{0F8DBB79-00D3-4A1C-91C6-FF8246277CB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskScheduler", "TaskScheduler\TaskScheduler.csproj", "{0F8DBB79-00D3-4A1C-91C6-FF8246277CB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SynchronizationContextAndTaskScheduler", "SynchronizationContextAndTaskScheduler\SynchronizationContextAndTaskScheduler.csproj", "{5B62BE53-7BB8-4876-A69D-D046650A8E86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -121,6 +123,10 @@ Global
 		{0F8DBB79-00D3-4A1C-91C6-FF8246277CB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F8DBB79-00D3-4A1C-91C6-FF8246277CB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F8DBB79-00D3-4A1C-91C6-FF8246277CB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B62BE53-7BB8-4876-A69D-D046650A8E86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B62BE53-7BB8-4876-A69D-D046650A8E86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B62BE53-7BB8-4876-A69D-D046650A8E86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B62BE53-7BB8-4876-A69D-D046650A8E86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -142,6 +148,7 @@ Global
 		{C57A07D4-E027-4653-BA40-20320FA43BFE} = {95D1AB3B-55B4-474F-BB76-8BF787A0DA6C}
 		{BBC00D25-389D-4F5E-988B-A137AAD6A646} = {95D1AB3B-55B4-474F-BB76-8BF787A0DA6C}
 		{0F8DBB79-00D3-4A1C-91C6-FF8246277CB3} = {95D1AB3B-55B4-474F-BB76-8BF787A0DA6C}
+		{5B62BE53-7BB8-4876-A69D-D046650A8E86} = {95D1AB3B-55B4-474F-BB76-8BF787A0DA6C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {364366FB-8A6B-4A40-84C5-930F4D1618F7}
